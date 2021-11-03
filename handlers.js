@@ -26,7 +26,6 @@ const TeachIntentHandler = {
 
         const propmt = 'So you have chosen to learn ' + subject + ' ' + lesson + ' ' + topic;
         let speakOutput = 'Lol'
-        console.log(subject, lesson, topic)
         if (subject.toLowerCase() === 'english') {
             console.log('english subject')
             if (lesson.toLowerCase() === 'stories') {
@@ -46,7 +45,6 @@ const TeachIntentHandler = {
                     .getResponse();
             }
         }
-        console.log(speakOutput)
         return handlerInput.responseBuilder
             .speak(speakOutput.replace(/ +(?= )/g, '').replace('\n', ''))
             //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
