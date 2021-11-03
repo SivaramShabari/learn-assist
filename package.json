@@ -1,0 +1,21 @@
+{
+	"name": "learning-assistant",
+	"version": "1.0.0",
+	"description": "A learning assistant for students to learn academic content through an intelligent chatbot",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sivaram Shabari A",
+	"license": "ISC",
+	"dependencies": {
+		"ask-sdk": "^2.11.0",
+		"ask-sdk-core": "^2.11.0",
+		"ask-sdk-express-adapter": "^2.11.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"firebase": "^9.0.0",
+		"nodemon": "^2.0.14"
+	}
+}
