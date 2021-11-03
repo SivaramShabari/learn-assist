@@ -41,6 +41,6 @@ app.use(cors());
 
 app.post('/alexa', adapter.getRequestHandlers())
 
-app.listen(5000, () => {
+app.listen(process.env.PORT||5000, () => {
     console.log('Learning Assistent listening on port 5000')
 })
