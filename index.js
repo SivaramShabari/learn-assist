@@ -38,9 +38,8 @@ const adapter = new ExpressAdapter(skill, false, false);
 const app = express();
 app.use(cors());
 
-
 app.post('/alexa', adapter.getRequestHandlers())
-app.get('/',(req,res)=>res.send("<h1>Welcome! I'm your personal Learning Assistant!</h1>"
+app.get('/',(req,res)=>res.send("<Welcome! I'm your personal Learning Assistant!"
 app.listen(process.env.PORT||5000, () => {
     console.log('Learning Assistent listening on port 5000')
 })
